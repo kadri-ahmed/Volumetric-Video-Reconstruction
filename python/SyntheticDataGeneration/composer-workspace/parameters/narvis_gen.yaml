@@ -1,0 +1,55 @@
+# object parameters 
+flying_objects:
+  # obj_model: /NVIDIA/Assets/Isaac/2022.2.1/Isaac/Props/Dolly/dolly.usd
+  obj_model: /NVIDIA/Assets/Isaac/2022.2.1/Isaac/Props/Forklift/forklift.usd
+  # obj_model: Choice(["/NVIDIA/Assets/Isaac/2022.2.1/Isaac/Props/Dolly/dolly.usd", "/NVIDIA/Assets/Isaac/2022.2.1/Isaac/Props/Forklift/forklift.usd"])
+  # obj_texture: Choice(["assets/textures/synthetic.txt"])
+  # obj_material: /NVIDIA/Materials/Base/Natural/Dirt.mdl
+  obj_count: 1 #Range(15, 30)
+  obj_size: Uniform(2500, 10000) # eq. to 1m = 100cm 
+  # obj_rot: Uniform((0, 0, 0), (360, 360, 360))
+  obj_horiz_fov_loc: 0 # Uniform(-1, 1)
+  obj_vert_fov_loc: 0 # Uniform(-1, 1)
+  obj_distance: 10 #Uniform(20, 50) 
+  obj_coord_camera_relative: True
+  obj_rot_camera_relative: True
+
+# light parameters
+camera_light:
+  light_color: (255, 255, 255)
+  light_count: 1
+  light_intensity: 1000
+  light_radius: 50
+  light_distance: 0
+
+# room parameters 
+scenario_room_enabled: False 
+# scenario_model: /NVIDIA/Assets/Isaac/2022.2.1/Isaac/Environments/Simple_Warehouse/warehouse.usd
+scenario_model: /NVIDIA/Assets/Isaac/2022.2.1/Isaac/Environments/Hospital/hospital.usd
+floor_size: 2000
+wall_height: 2000
+floor_color: (160, 185, 190)
+wall_color: (160, 185, 190)
+
+# camera parameters 
+focal_length: 20 # in mm
+horiz_aperture: 20 # in mm
+vert_aperture: 18 # in mm
+stereo: False
+
+# camera views
+# camera_coord: Walk("assets/coords/camera_positions.txt") 
+camera_coord: (0, 30, 0) 
+camera_rot: (0, 0, 0)
+
+
+
+#output
+img_width: 640
+img_height: 576
+num_scenes: 6
+rgb: True
+depth: True
+
+# groundtruth_visuals: True
+# groundtruth_stereo: True

@@ -1,4 +1,4 @@
-# VVR
+# Volumetric Video Reconstruction
 This is the code related to the Bachelor Thesis <strong>Deep Learning-based Denoising of Point Clouds Trained on Generated Synthetic Data Simulating Real World Scene Capture Conditions by Azure Kinect</strong>. 
 
 # Motivation
